@@ -72,7 +72,7 @@ main()
 
   bytes = read(h, buf, sizeof(buf) - 1);
   buf[bytes] = '\0';
-  printf("%s", buf);
+  printf("Read %zd bytes\n===========\n%s", bytes, buf);
     
   close(fd);
   close(h);
